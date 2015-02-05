@@ -1,0 +1,15 @@
+{
+  "name": "jasmine-jstd-adapter",
+  "homepage": "https://github.com/ibolmo/jasmine-jstd-adapter",
+  "version": "1.1.2",
+  "_release": "1.1.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.1.2",
+    "commit": "19fc291bc225cac4e6e8c0437391cc2204dee282"
+  },
+  "_source": "git://github.com/ibolmo/jasmine-jstd-adapter.git",
+  "_target": "~1.1.2",
+  "_originalSource": "jasmine-jstd-adapter",
+  "_direct": true
+}

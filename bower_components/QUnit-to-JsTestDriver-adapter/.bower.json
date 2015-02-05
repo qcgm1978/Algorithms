@@ -1,0 +1,14 @@
+{
+  "name": "QUnit-to-JsTestDriver-adapter",
+  "homepage": "https://github.com/exnor/QUnit-to-JsTestDriver-adapter",
+  "_release": "81a1db5574",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "81a1db5574fbacadb0b89b8f109e8c5694209a8f"
+  },
+  "_source": "https://github.com/exnor/QUnit-to-JsTestDriver-adapter.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/exnor/QUnit-to-JsTestDriver-adapter.git",
+  "_direct": true
+}
