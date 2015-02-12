@@ -38,7 +38,6 @@
         }
 
         .view .slice {
-            width: 128px;
             height: 100%;
             z-index: 100;
 
@@ -80,27 +79,6 @@
             -o-transform: translate3d(128px, 0, 0);
             -ms-transform: translate3d(128px, 0, 0);
             transform: translate3d(128px, 0, 0);
-        }
-
-        /*为每个切片设置背景图片位置*/
-        .view .s1 {
-            background-position: 0px 0px;
-        }
-
-        .view .s2 {
-            background-position: -128px 0px;
-        }
-
-        .view .s3 {
-            background-position: -256px 0px;
-        }
-
-        .view .s4 {
-            background-position: -384px 0px;
-        }
-
-        .view .s5 {
-            background-position: -512px 0px;
         }
 
         .view .overlay {
@@ -208,6 +186,8 @@
         <img src="outlook.jpg"/>
     </div>
     <script type="text/javascript">
+        //        css set
+
         //jquery插件代码
         $.fn.hoverfold = function (args) {
 
@@ -227,7 +207,18 @@
                     $struct3.appendTo($struct2)
                     $struct2.appendTo($struct1)
 
-                    $item.find('img').remove().end().append($struct1).find('div.slice').css('background-image', 'url(' + img + ')').prepend($('<span class="overlay" ></span>'));
+                    var containerWidth = $('.view').width();
+                    var width = parseInt(containerWidth / 5);
+                    var i = 0;
+                    $item.find('img').remove().end().append($struct1).find('div.slice').css({
+                        'background-image': 'url(' + img + ')'
+                    }).css('background-position-x', function (i, n) {
+                        var ret = -( i * width) + 'px';
+                        i++;
+                        return ret
+                    })
+                            .width(width)
+                            .prepend($('<span class="overlay" ></span>'));
                 });
             });
         };

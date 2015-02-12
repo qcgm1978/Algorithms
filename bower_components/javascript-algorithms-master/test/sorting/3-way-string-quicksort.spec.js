@@ -14,7 +14,7 @@ describe('Most-Significant Digit', function () {
     expect(arr.length).toBe(1);
     expect(arr[0]).toBe('a');
   });
-
+  //
   it('should work with arrays with equally length strings', function () {
     var arr = ['bb', 'aa', 'cc'];
     quicksort(arr);
@@ -22,8 +22,9 @@ describe('Most-Significant Digit', function () {
     expect(arr[0]).toBe('aa');
     expect(arr[1]).toBe('bb');
     expect(arr[2]).toBe('cc');
+    expect(quicksort(['bb', 'aa', 'cc'])).toEqual( [ 'aa', 'bb', 'cc' ] )
   });
-
+  //
   it('should work with arrays with differently length strings', function () {
     var arr = ['bb', 'aaa', 'a', 'aa'];
     quicksort(arr);

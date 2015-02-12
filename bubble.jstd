@@ -11,4 +11,4 @@ test:
   - test/basic-issue.js
   - test/bubble.js
 
-timeout: 90
+timeout: 90000

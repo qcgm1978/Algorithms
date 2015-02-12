@@ -22,6 +22,16 @@ gulp.task('test', function () {
     .pipe(jasmine());
 });
 
+gulp.task('testSort', function () {
+  return gulp.src('test/sorting/bubblesort.spec.js')
+      .pipe(jasmine());
+});
+
+gulp.task('testStringSort', function () {
+  return gulp.src('test/sorting/3-way-string-quicksort.spec.js')
+      .pipe(jasmine());
+});
+
 gulp.task('jscs', function () {
   return gulp.src(['src/**/*.js', 'test/**/*.js'])
     .pipe(jscs());

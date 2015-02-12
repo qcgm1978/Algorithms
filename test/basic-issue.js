@@ -1,4 +1,8 @@
 describe("bind method", function () {
+    it('test setup and teardown', function (i, n) {
+        expect(beforeEach instanceof Function).toBeTruthy()
+        expect(afterEach instanceof Function).toBeTruthy()
+    })
     it("contains spec with an expectation", function () {
         x = 9;
         var module = {
