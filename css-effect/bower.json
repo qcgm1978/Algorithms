@@ -1,0 +1,20 @@
+{
+  "name": "css-effect",
+  "version": "0.0.0",
+  "homepage": "https://github.com/qcgm1978/Algorithms",
+  "authors": [
+    "'youthoverturn' <'qcgm197874@gmail.com'>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ProgressButtonStyles": "G:\\SkyDrive\\windows7\\ProgressButtonStyles.zip",
+    "skrollr": "https://github.com/Prinzhorn/skrollr.git#~0.6.29"
+  }
+}
